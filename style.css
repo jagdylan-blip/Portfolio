@@ -1,0 +1,166 @@
+/* CSS Styles */
+*{
+    font-family:"Cormorant Garamond", serif;
+  font-weight: 300;
+  font-style: normal;
+  box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    background-image: url(images/double-bubble-outline.png);
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: dimgray
+}
+h2 {
+    font-size: 2rem;
+    color: dimgray
+}
+
+p, ul, ol {
+    font-size: 1rem;
+    color: dimgray
+}
+
+a:link {
+    color: #397eeB;
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    color:blue;
+    text-decoration: none;
+}
+
+.pic {
+    width: 300px
+}
+
+.container {
+    background-color: white;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 35px 5% 0 5%;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*Button Style*/
+.button a:link, .button a:visited {
+    color: grey;
+    border: grey thin solid;
+    padding: 10px 0;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button a:hover{
+    border: black thin solid;
+    color: white;
+    background-color: black;
+}
+
+/*Header Styles*/
+header {
+    background-color: rgb(130, 117, 117);
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 10px;
+    padding: 0 5%;
+    text-transform: uppercase;
+    height: 90px;
+
+}
+header h1 {
+    grid-column: 1 / span 6;
+    margin-top: 15px;
+}
+header h1 a:link,
+header h1 a:hover,
+header h1 a:visited{
+    color: white;
+    text-decoration: none;
+}
+header nav {
+    grid-column: 7 / span 6;
+}
+
+header nav li a:link,
+header nav li a:hover,
+header nav li a:visited {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+header nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+}
+
+/*Home Page content style*/
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
+}
+
+.about {
+    grid-column: 1 / span 8;
+    padding: 0 5% 2rem 0;
+}
+.photo {
+    grid-column: 9 / span 4;
+}
+
+
+/*Footer Styles*/
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin: .5rem 3.5rem;
+    border-top: grey solid thin;
+}
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+footer ul a {
+    display: block;
+    padding: 0 .5rem;
+}
+
+/*Work*/
+.work {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+.work div {
+    text-align: center;
+    padding: 0 5% 5% 5%;
+}
+
+
+
+
